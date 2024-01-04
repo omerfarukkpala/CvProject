@@ -31,7 +31,7 @@ namespace CvProject.Controllers
             return View();
         }
 
-        public ActionResult Tesst()
+        public ActionResult Tessst()
         {
             return View();
         }
