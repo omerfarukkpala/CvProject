@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebCvProject.Models.Entity;
 
 namespace WebCvProject.Controllers
 {
     public class DefaultController : Controller
     {
         // GET: Default
+
+        DbCvEntities db = new DbCvEntities();
+
         public ActionResult Index()
         {
             return View();
