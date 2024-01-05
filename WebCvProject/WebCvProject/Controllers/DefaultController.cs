@@ -15,7 +15,8 @@ namespace WebCvProject.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var degerler = db.TblHakkimda.ToList();
+            return View(degerler);
         }
     }
 }
