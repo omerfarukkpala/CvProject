@@ -30,7 +30,10 @@ namespace CvProject.Controllers
         {
             return View();
         }
-        
+        public ActionResult Test2()
+        {
+            return View();
+        }
 
 
     }
