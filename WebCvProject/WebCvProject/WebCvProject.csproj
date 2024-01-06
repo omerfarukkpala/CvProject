@@ -255,6 +255,7 @@
     <Content Include="Views\Default\Deneyim.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Default\SosyalMedya.cshtml" />
+    <Content Include="Views\Default\Sertifikalarim.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
