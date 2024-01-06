@@ -257,6 +257,7 @@
     <Content Include="Views\Default\SosyalMedya.cshtml" />
     <Content Include="Views\Default\Sertifikalarim.cshtml" />
     <Content Include="Views\Default\Egitimlerim.cshtml" />
+    <Content Include="Views\Default\Hobilerim.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
