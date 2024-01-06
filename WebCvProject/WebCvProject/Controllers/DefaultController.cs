@@ -23,5 +23,10 @@ namespace WebCvProject.Controllers
             var sosyalmedya = db.TblSosyalMedya.Where(x => x.Durum == true).ToList();
             return PartialView(sosyalmedya);
         }
+        public PartialViewResult Deneyim()
+        {
+            var deneyimler = db.TblDeneyimlerim.ToList();
+            return PartialView(deneyimler);
+        }
     }
 }
