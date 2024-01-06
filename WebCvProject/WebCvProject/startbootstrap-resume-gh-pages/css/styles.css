@@ -4682,8 +4682,8 @@ a.badge:hover, a.badge:focus {
 }
 
 .badge-primary {
-  color: #fff;
-  background-color: #bd5d38;
+    color: #fff;
+    background-color: #ffc107;
 }
 a.badge-primary:hover, a.badge-primary:focus {
   color: #fff;
