@@ -85,24 +85,26 @@
 
     <div class="skills-section">
         <br />
-        <h3 align="left">Becerilerim :</h3>
+        <h3 align="left" class="section-title">Becerilerim :</h3>
         <div class="skills-list">
             <ul class="fa-ul mb-0">
                 @foreach (var item in Model)
                 {
-                    <li>
+                    <li class="skill-item">
                         <span class="fa-li"><i class="fas fa-star"></i></span>
-                        @item.Yetenek
+                        <span class="skill-name">@item.Yetenek</span>
 
                         <!-- Progress bar -->
-                        <div class="progress mb-4">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: @item.Oran%">@item.Oran%</div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: @item.Oran%">@item.Oran%</div>
                         </div>
                     </li>
                 }
             </ul>
         </div>
     </div>
+
+
 
 
 </div>
