@@ -91,17 +91,18 @@
                 @foreach (var item in Model)
                 {
                     <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        <span class="fa-li"><i class="fas fa-star"></i></span>
                         @item.Yetenek
 
                         <!-- Progress bar -->
                         <div class="progress mb-4">
-                            <div class="progress-bar" role="progressbar" style="width: @item.Oran%">@item.Oran%</div>
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: @item.Oran%">@item.Oran%</div>
                         </div>
                     </li>
                 }
             </ul>
         </div>
     </div>
+
 
 </div>
