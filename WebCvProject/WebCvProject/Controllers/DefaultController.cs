@@ -18,11 +18,11 @@ namespace WebCvProject.Controllers
             var degerler = db.TblHakkimda.ToList();
             return View(degerler);
         }
-        public PartialViewResult SosyalMedya()
-        {
-            var sosyalmedya = db.TblSosyalMedya.Where(x => x.Durum == true).ToList();
-            return PartialView(sosyalmedya);
-        }
+        //public PartialViewResult SosyalMedya()
+        //{
+        //    var sosyalmedya = db.TblSosyalMedya.Where(x => x.Durum == true).ToList();
+        //    return PartialView(sosyalmedya);
+        //}
         public PartialViewResult Deneyim()
         {
             var deneyimler = db.TblDeneyimlerim.ToList();
