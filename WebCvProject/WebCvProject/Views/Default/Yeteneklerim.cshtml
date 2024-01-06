@@ -19,14 +19,15 @@
         <li class="list-inline-item"><i class="fab fa-npm"></i></li>
     </ul>
     <div class="subheading mb-3">Becerilerim</div>
-    <ul class="fa-ul mb-0">
-        @foreach (var item in Model)
-        {
-    
-        <li>
-            <span class="fa-li"><i class="fas fa-check"></i></span>
-            @item.Yetenek
-        </li>
-        }
-    </ul>
+    <div class="skills-list">
+        <ul class="fa-ul mb-0">
+            @foreach (var item in Model)
+            {
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    @item.Yetenek
+                </li>
+            }
+        </ul>
+    </div>
 </div>
