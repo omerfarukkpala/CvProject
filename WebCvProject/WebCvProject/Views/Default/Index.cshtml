@@ -55,22 +55,25 @@
         {
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 id="typing-text" class="mb-0">
-                        <span id="ad">@item.Ad</span>
-
-                    </h1>
-                    <span class="text-primary" id="soyad">@item.Soyad</span><br />
+                    <h1 id="typing-text" class="mb-0"> 👋</h1>
+                    <br />
+                    <br />
                     <div class="subheading mb-3">
-                        @item.Adres · @item.Telefon ·
-                        📧 <a href="@item.Mail">@item.Mail</a>
+                        <i class="fas fa-map-marker-alt"></i> @item.Adres ·
+                        <i class="fas fa-phone-alt"></i> @item.Telefon ·
+                        <i class="fas fa-envelope"></i> <a href="@item.Mail">@item.Mail</a>
                     </div>
+                    <br />
+                    @item.Aciklama
+
                     <p class="lead mb-4">
-                        👋 @item.Ad.
-                        <br />
+
                     </p>
                     @Html.Action("SosyalMedya")
-                </div>
-            </section>
+                </div><br />
+            </section><br /> <span id="ad"> @item.Ad</span> 
+            <span class="text-primary" id="soyad">@item.Soyad</span>
+
         }
         <hr class="m-0" />
 
@@ -82,9 +85,9 @@
             const ad = document.getElementById('ad').innerText;
             const soyad = document.getElementById('soyad').innerText;
 
-            const text = `👋 I am ${ad} ${soyad}.`;
+            const text = `I am ${ad} ${soyad}.`;
             const typingElement = document.getElementById('typing-text');
-            const typingDelay = 100;
+            const typingDelay = 150;
 
             typeText(text, typingElement, typingDelay);
         }
