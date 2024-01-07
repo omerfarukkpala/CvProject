@@ -50,7 +50,6 @@
         </div>
     </nav>
     <!-- Page Content-->
-    <!-- Page Content-->
     <div class="container-fluid p-0">
         @foreach (var item in Model)
         {
@@ -65,7 +64,7 @@
                         📧 <a href="@item.Mail">@item.Mail</a>
                     </div>
                     <p class="lead mb-4">
-                        👋 <span id="aciklama">@item.Ad. @item.Aciklama</span>
+                        👋 @item.Ad.
                         <br />
                     </p>
                     @Html.Action("SosyalMedya")
@@ -79,11 +78,10 @@
 
     <script>
         function runTypingEffect() {
-            const ad = document.getElementById('ad').textContent;
-            const soyad = document.getElementById('soyad').textContent;
-            const aciklama = document.getElementById('aciklama').textContent;
+            const ad = document.getElementById('ad').innerText;
+            const soyad = document.getElementById('soyad').innerText;
 
-            const text = `I am ${ad} ${soyad}. ${aciklama}`;
+            const text = `I am ${ad} ${soyad}.`;
             const typingElement = document.getElementById('typed-name');
             const typingDelay = 100;
 
@@ -100,7 +98,6 @@
 
         document.addEventListener('DOMContentLoaded', runTypingEffect);
     </script>
-
 
 
 
@@ -143,7 +140,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="/startbootstrap-resume-gh-pages/js/scripts.js"></script>
-    
+
 </body>
 </html>
 
