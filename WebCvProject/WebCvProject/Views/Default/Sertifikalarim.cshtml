@@ -2,13 +2,16 @@
 @model List<TblSertifikalarim>
 <div class="resume-section-content">
     <h2 class="mb-5">Ödüller & Sertifikalar</h2>
-    <ul class="fa-ul mb-0">
+    <div class="row">
         @foreach (var item in Model)
         {
-        <li>
-            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-            @item.Aciklama
-        </li>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-trophy text-warning"></i> @item.Aciklama</h5>
+                    </div>
+                </div>
+            </div>
         }
-    </ul>
+    </div>
 </div>
