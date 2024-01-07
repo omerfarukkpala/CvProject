@@ -16,6 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-cN16+rrnk4CmQ8B2mpPd9bQ9iwkqUV7yjNkxUet9xUPOOTZ4W6U+1TkRLeKRS2a7SVeqVvQr2yM3HJx4WpYkR0A==" crossorigin="anonymous" />
+
     <title> CV</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -50,6 +52,11 @@
         </div>
     </nav>
     <!-- Page Content-->
+    <style>
+        .fa-icon {
+            color: #3498db; /* Bu renk örnektir, istediğiniz rengi kullanabilirsiniz */
+        }
+    </style>
     <div class="container-fluid p-0">
         @foreach (var item in Model)
         {
@@ -62,6 +69,7 @@
                         <i class="fas fa-map-marker-alt"></i> @item.Adres ·
                         <i class="fas fa-phone-alt"></i> @item.Telefon ·
                         <i class="fas fa-envelope"></i> <a href="@item.Mail">@item.Mail</a>
+
                     </div>
                     <br />
                     @item.Aciklama
@@ -71,7 +79,7 @@
                     </p>
                     @Html.Action("SosyalMedya")
                 </div><br />
-            </section><br /> <span id="ad"> @item.Ad</span> 
+            </section><br /> <span id="ad"> @item.Ad</span>
             <span class="text-primary" id="soyad">@item.Soyad</span>
 
         }
