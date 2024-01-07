@@ -4,10 +4,15 @@
         @foreach (var item in Model)
         {
             <div class="col-md-6">
-                <div class="card mb-3" style="background-color: #f8f9fa;">
+                <div class="card mb-3" style="background-color: #f8f9fa; border: 1px solid #dee2e6;">
                     <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-trophy text-warning"></i> <a href="@item.Aciklama" target="_blank">@item.Aciklama</a></h5>
-                        <p class="card-text">@item.Tarih</p>
+                        <h5 class="card-title"><i class="fas fa-award text-success"></i> <a href="@item.Aciklama" target="_blank">@item.Aciklama</a></h5>
+                        @*<p class="card-text"><i class="far fa-calendar-alt"></i> @item.Tarih</p>*@
+                        <!-- Görsel eklemek istersen: <img src="sertifika-gorseli.jpg" alt="Sertifika Görseli" class="img-fluid"> -->
+                        <img src="@item.Tarih" alt="Sertifika Görseli" class="img-fluid">
+                        <img src="@item.Aciklama" alt="" style="margin-bottom:20px" height=400 />
+
+
                     </div>
                 </div>
             </div>
