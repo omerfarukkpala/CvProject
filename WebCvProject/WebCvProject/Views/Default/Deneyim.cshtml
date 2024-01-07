@@ -5,20 +5,13 @@
     <h2 class="mb-5">Deneyimlerim</h2>
     @foreach (var item in Model)
     {
-        <div class="card mb-3">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <i class="fas fa-briefcase fa-3x"></i> <!-- Veya başka bir iş ikonu seçebilirsin -->
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">@item.Baslik</h5>
-                        <p class="card-text">@item.AltBaslik</p>
-                        <p class="card-text text-justify">@item.Aciklama</p>
-                        <p class="card-text"><small class="text-muted">@item.Tarih</small></p>
-                    </div>
-                </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">@item.Baslik</h3>
+                <div class="subheading mb-3">@item.AltBaslik</div>
+                <p class="text-justify">@item.Aciklama</p>
             </div>
+            <div class="flex-shrink-0"><span class="text-primary">@item.Tarih</span></div>
         </div>
     }
 </div>
