@@ -53,9 +53,11 @@
     </nav>
     <!-- Page Content-->
     <style>
-        .fa-icon {
-            color: #3498db; /* Bu renk örnektir, istediğiniz rengi kullanabilirsiniz */
-        }
+        
+        .input-group-text {
+            background-color: #ffc107; /* FontAwesome ikonlarına arka plan rengi */
+            color: white; /* FontAwesome ikon rengi */
+            font-size: 1.2rem; /* FontAwesome ikon boyutu */
     </style>
     <div class="container-fluid p-0">
         @foreach (var item in Model)
@@ -66,18 +68,23 @@
                     <br />
                     <br />
                     <div class="subheading mb-3">
+
                         <i class="fas fa-map-marker-alt"></i> @item.Adres ·
+                      
                         <i class="fas fa-phone-alt"></i> @item.Telefon ·
-                        <i class="fas fa-envelope"></i> <a href="@item.Mail">@item.Mail</a>
+                        <i class="fas fa-envelope"></i>  <a href="@item.Mail">@item.Mail</a>
+
 
                     </div>
                     <br />
-                    <i class="fas fa-info-circle"></i> @item.Aciklama
+                    
 
-                    <p class="lead mb-4">
+                        <i class="fas fa-info-circle"></i> @item.Aciklama
+                    
+                        <p class="lead mb-4">
 
-                    </p>
-                    @Html.Action("SosyalMedya")
+                        </p>
+                        @Html.Action("SosyalMedya")
                 </div><br />
             </section><br /> <span id="ad"> @item.Ad</span>
             <span class="text-primary" id="soyad">@item.Soyad</span>
