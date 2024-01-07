@@ -68,17 +68,11 @@
                     <br />
                     <br />
                     <div class="subheading mb-3">
-
                         <i class="fas fa-map-marker-alt"></i> @item.Adres ·
-                      
                         <i class="fas fa-phone-alt"></i> @item.Telefon ·
                         <i class="fas fa-envelope"></i>  <a href="@item.Mail">@item.Mail</a>
-
-
                     </div>
                     <br />
-                    
-
                         <i class="fas fa-info-circle"></i> @item.Aciklama
                     
                         <p class="lead mb-4">
@@ -99,6 +93,7 @@
         function runTypingEffect() {
             const ad = document.getElementById('ad').innerText;
             const soyad = document.getElementById('soyad').innerText;
+
 
             const text = `I am ${ad} ${soyad}.`;
             const typingElement = document.getElementById('typing-text');
