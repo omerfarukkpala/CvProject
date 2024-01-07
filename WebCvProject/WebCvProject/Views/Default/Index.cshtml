@@ -55,10 +55,11 @@
         {
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 id="typed-name" class="mb-0">
+                    <h1 id="typing-text" class="mb-0">
                         <span id="ad">@item.Ad</span>
-                        <span class="text-primary" id="soyad">@item.Soyad</span>
-                    </h1><br />
+
+                    </h1>
+                    <span class="text-primary" id="soyad">@item.Soyad</span><br />
                     <div class="subheading mb-3">
                         @item.Adres · @item.Telefon ·
                         📧 <a href="@item.Mail">@item.Mail</a>
@@ -81,23 +82,27 @@
             const ad = document.getElementById('ad').innerText;
             const soyad = document.getElementById('soyad').innerText;
 
-            const text = `I am ${ad} ${soyad}.`;
-            const typingElement = document.getElementById('typed-name');
+            const text = `👋 I am ${ad} ${soyad}.`;
+            const typingElement = document.getElementById('typing-text');
             const typingDelay = 100;
 
             typeText(text, typingElement, typingDelay);
         }
 
         function typeText(text, typingElement, delay) {
-            for (let i = 0; i < text.length; i++) {
-                setTimeout(() => {
-                    typingElement.textContent += text.charAt(i);
-                }, delay * i);
-            }
+            let i = 0;
+            const intervalId = setInterval(() => {
+                typingElement.textContent += text.charAt(i);
+                i++;
+                if (i === text.length) {
+                    clearInterval(intervalId);
+                }
+            }, delay);
         }
 
         document.addEventListener('DOMContentLoaded', runTypingEffect);
     </script>
+
 
 
 

@@ -197,9 +197,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="js\bootstrap.bundle.min.js" />
-    <Content Include="js\lightbox-plus-jquery.min.js" />
-    <Content Include="js\script.js" />
     <Content Include="Models\Entity\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
