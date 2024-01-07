@@ -50,56 +50,91 @@
         </div>
     </nav>
     <!-- Page Content-->
+    <!-- Page Content-->
     <div class="container-fluid p-0">
-        <!-- About-->
         @foreach (var item in Model)
         {
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        @item.Ad
-                        <span class="text-primary">@item.Soyad</span>
-                    </h1>
-                    <div class="subheading mb-5">
+                    <h1 id="typed-name" class="mb-0">
+                        <span id="ad">@item.Ad</span>
+                        <span class="text-primary" id="soyad">@item.Soyad</span>
+                    </h1><br />
+                    <div class="subheading mb-3">
                         @item.Adres · @item.Telefon ·
-                        <a href="@item.Mail">@item.Mail</a>
+                        📧 <a href="@item.Mail">@item.Mail</a>
                     </div>
-                    <p class="lead mb-5">@item.Aciklama</p>
+                    <p class="lead mb-4">
+                        👋 <span id="aciklama">@item.Ad. @item.Aciklama</span>
+                        <br />
+                    </p>
                     @Html.Action("SosyalMedya")
                 </div>
             </section>
         }
         <hr class="m-0" />
 
-        <!-- Experience-->
-        <section class="resume-section" id="experience">
-            @Html.Action("Deneyim")
-        </section>
-        <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section" id="education">
-            @Html.Action("Egitimlerim")
-        </section>
-        <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
-            @Html.Action("Yeteneklerim")
-        </section>
-        <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
-            @Html.Action("Hobilerim")
-        </section>
-        <hr class="m-0" />
-        <!-- Awards-->
-        <section class="resume-section" id="awards">
-            @Html.Action("Sertifikalarim")
-        </section>
-        <hr class="m-0" />
-        <!-- Contact-->
-        <section class="resume-section" id="contact">
-            @Html.Action("Iletisim")
-        </section>
+        <!-- Other sections... -->
+    </div>
+
+    <script>
+        function runTypingEffect() {
+            const ad = document.getElementById('ad').textContent;
+            const soyad = document.getElementById('soyad').textContent;
+            const aciklama = document.getElementById('aciklama').textContent;
+
+            const text = `I am ${ad} ${soyad}. ${aciklama}`;
+            const typingElement = document.getElementById('typed-name');
+            const typingDelay = 100;
+
+            typeText(text, typingElement, typingDelay);
+        }
+
+        function typeText(text, typingElement, delay) {
+            for (let i = 0; i < text.length; i++) {
+                setTimeout(() => {
+                    typingElement.textContent += text.charAt(i);
+                }, delay * i);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', runTypingEffect);
+    </script>
+
+
+
+
+
+
+    <!-- Experience-->
+    <section class="resume-section" id="experience">
+        @Html.Action("Deneyim")
+    </section>
+    <hr class="m-0" />
+    <!-- Education-->
+    <section class="resume-section" id="education">
+        @Html.Action("Egitimlerim")
+    </section>
+    <hr class="m-0" />
+    <!-- Skills-->
+    <section class="resume-section" id="skills">
+        @Html.Action("Yeteneklerim")
+    </section>
+    <hr class="m-0" />
+    <!-- Interests-->
+    <section class="resume-section" id="interests">
+        @Html.Action("Hobilerim")
+    </section>
+    <hr class="m-0" />
+    <!-- Awards-->
+    <section class="resume-section" id="awards">
+        @Html.Action("Sertifikalarim")
+    </section>
+    <hr class="m-0" />
+    <!-- Contact-->
+    <section class="resume-section" id="contact">
+        @Html.Action("Iletisim")
+    </section>
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -108,6 +143,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="/startbootstrap-resume-gh-pages/js/scripts.js"></script>
+    
 </body>
 </html>
 
