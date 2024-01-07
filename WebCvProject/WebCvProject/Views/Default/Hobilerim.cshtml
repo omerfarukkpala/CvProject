@@ -20,6 +20,10 @@
         .hobi-card:hover .card-body {
             color: var(--clr-primary);
         }
+
+    .popup-content {
+        display: none;
+    }
 </style>
 
 <div class="resume-section-content">
@@ -32,11 +36,30 @@
             <div class="col-lg-4 mb-4">
                 <div class="card hobi-card">
                     <div class="card-body">
-                        <h5 class="card-title">@item.Aciklama1</h5>
+                        <a href="#popup-@item.ID" class="popup-link">
+                            <img src="@item.Aciklama1" alt="" style="margin-bottom:1px" height=150 />
+                        </a>
+                        <br />
                         <a href="@item.Aciklama2" target="_blank" rel="noopener noreferrer">@item.Aciklama2</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Popup Content -->
+            <div id="popup-@item.ID" class="popup-content">
+                <img src="@item.Aciklama1" alt="" height=400 />
+            </div>
         }
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $('.popup-link').magnificPopup({
+            type: 'inline',
+            midClick: true, // Allow opening popup on middle mouse click
+            removalDelay: 300,
+            mainClass: 'mfp-fade'
+        });
+    });
+</script>
