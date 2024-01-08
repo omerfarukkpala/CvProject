@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebCvProject.Models.Entity;
 using WebCvProject.Repositories;
 
 namespace WebCvProject.Controllers
@@ -17,5 +18,21 @@ namespace WebCvProject.Controllers
             var degerler = repo.List();
             return View(degerler);
         }
+        [HttpGet]
+        public ActionResult DeneyimEkle()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult DeneyimEkle(TblDeneyimlerim p)
+        {
+            repo.TAdd(p);
+            return RedirectToAction("Index");
+        }
+
+
+
+
     }
 }
