@@ -183,6 +183,7 @@
     <Compile Include="Repositories\EgitimRepository.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
     <Compile Include="Repositories\HakkimdaRepository.cs" />
+    <Compile Include="Repositories\IletisimRepository.cs" />
     <Compile Include="Repositories\YetenekRepository.cs" />
   </ItemGroup>
   <ItemGroup>
