@@ -27,6 +27,15 @@ namespace WebCvProject.Repositories
             db.Set<T>().Remove(p);
             db.SaveChanges();
         }
+        public T TGet(int id)
+        {
+            return db.Set<T>().Find(id);
+        }
+
+        public void TUpdate(T p)
+        {
+            db.SaveChanges();
+        }
 
 
     }
