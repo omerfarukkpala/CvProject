@@ -1,4 +1,5 @@
-﻿
+﻿@using WebCvProject.Models.Entity
+@model List<TblDeneyimlerim>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -28,5 +29,6 @@
         </tr>
     }
 </table>
+<br />
 <a href="/Deneyim/DeneyimEkle/" class="btn btn-primary">Yeni Deneyim Ekle</a>
 
