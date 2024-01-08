@@ -1,4 +1,7 @@
-﻿<div class="resume-section-content">
+﻿@using WebCvProject.Models.Entity
+
+@model List<TblSertifikalarim>
+<div class="resume-section-content">
     <h2 class="mb-5">Ödüller & Sertifikalar</h2>
     <div class="row">
         @foreach (var item in Model)
@@ -8,7 +11,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-award text-success"></i> <a href="@item.Aciklama" target="_blank">@item.Aciklama</a></h5>
                         <p class="card-text"><i class="far fa-calendar-alt"></i> @item.Tarih</p>
-                        
+
 
 
                     </div>
