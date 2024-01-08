@@ -11,7 +11,22 @@ namespace WebCvProject.Repositories
     public class GenericRepository<T> where T : class, new()
     {
         DbCvEntities db = new DbCvEntities();
+        public List<T> List()
+        {
+            return db.Set<T>().ToList();
+        }
 
+        public void TAdd(T p)
+        {
+            db.Set<T>().Add(p);
+            db.SaveChanges();
+        }
+
+        public void TDelete(T p)
+        {
+            db.Set<T>().Remove(p);
+            db.SaveChanges();
+        }
 
 
     }
