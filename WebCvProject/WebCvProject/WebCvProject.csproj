@@ -182,6 +182,7 @@
     <Compile Include="Repositories\DeneyimRepository.cs" />
     <Compile Include="Repositories\EgitimRepository.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
+    <Compile Include="Repositories\HakkimdaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminLTE-3.0.4\.gitignore" />
