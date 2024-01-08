@@ -2355,6 +2355,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Repositories\" />
     <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
