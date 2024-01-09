@@ -23,6 +23,11 @@ namespace WebCvProject.Controllers
         {
             return View();
         }
-
+        [HttpPost]
+        public ActionResult YeniYetenek(TblYeteneklerim p)
+        {
+            repo.TAdd(p);
+            return RedirectToAction("Index");
+        }
     }
 }
