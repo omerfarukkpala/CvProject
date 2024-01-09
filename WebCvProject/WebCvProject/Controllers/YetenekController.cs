@@ -36,6 +36,7 @@ namespace WebCvProject.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
         public ActionResult YetenekDuzenle(int id)
         {
             var yetenek = repo.Find(x => x.ID == id);
