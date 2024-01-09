@@ -2369,11 +2369,11 @@
     <Content Include="Views\Yetenek\Index.cshtml" />
     <Content Include="Views\Yetenek\YeniYetenek.cshtml" />
     <Content Include="Views\Yetenek\YetenekDuzenle.cshtml" />
+    <Content Include="Views\Egitim\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Admin\" />
-    <Folder Include="Views\Egitim\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
