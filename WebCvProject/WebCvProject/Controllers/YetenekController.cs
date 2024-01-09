@@ -43,6 +43,14 @@ namespace WebCvProject.Controllers
         }
 
         [HttpPost]
+        public ActionResult YetenekDuzenle(TblYeteneklerim t)
+        {
+            var y = repo.Find(x => x.ID == t.ID);
+            y.Yetenek = t.Yetenek;
+            y.Oran = t.Oran;
+            repo.TUpdate(y);
+            return RedirectToAction("Index");
+        }
 
     }
 }
