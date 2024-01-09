@@ -17,5 +17,8 @@ namespace WebCvProject.Controllers
             var yetenekler = repo.List();
             return View(yetenekler);
         }
+
+
+
     }
 }
