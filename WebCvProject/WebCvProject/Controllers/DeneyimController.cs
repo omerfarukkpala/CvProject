@@ -30,7 +30,12 @@ namespace WebCvProject.Controllers
             repo.TAdd(p);
             return RedirectToAction("Index");
         }
-
+        public ActionResult DeneyimSil(int id)
+        {
+            TblDeneyimlerim t = repo.Find(x => x.ID == id);
+            repo.TDelete(t);
+            return RedirectToAction("Index");
+        }
 
 
 
