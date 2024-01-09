@@ -36,6 +36,26 @@ namespace WebCvProject.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public ActionResult YeniSertifika()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult YeniSertifika(TblSertifikalarim p)
+        {
+            repo.TAdd(p);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult SertifikaSil(int id)
+        {
+            var sertifika = repo.Find(x => x.ID == id);
+            repo.TDelete(sertifika);
+            return RedirectToAction("Index");
+        }
+
 
     }
 }
