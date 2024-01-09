@@ -132,6 +132,7 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\DeneyimController.cs" />
+    <Compile Include="Controllers\EgitimController.cs" />
     <Compile Include="Controllers\HakkimdaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\YetenekController.cs" />
@@ -2372,6 +2373,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Admin\" />
+    <Folder Include="Views\Egitim\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
