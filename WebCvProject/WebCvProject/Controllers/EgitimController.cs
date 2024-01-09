@@ -35,6 +35,13 @@ namespace WebCvProject.Controllers
             repo.TAdd(p);
             return RedirectToAction("Index");
         }
+        public ActionResult EgitimSil(int id)
+        {
+            var egitim = repo.Find(x => x.ID == id);
+            repo.TDelete(egitim);
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
 
     }
 }
