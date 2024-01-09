@@ -42,6 +42,12 @@ namespace WebCvProject.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
+        public ActionResult EgitimDuzenle(int id)
+        {
+            var egitim = repo.Find(x => x.ID == id);
+            return View(egitim);
+        }
+        [HttpPost]
 
     }
 }
