@@ -18,7 +18,11 @@ namespace WebCvProject.Controllers
             return View(yetenekler);
         }
 
-
+        [HttpGet]
+        public ActionResult YeniYetenek()
+        {
+            return View();
+        }
 
     }
 }
