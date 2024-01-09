@@ -20,6 +20,21 @@ namespace WebCvProject.Controllers
             return View(egitim);
         }
         [HttpGet]
+        public ActionResult EgitimEkle()
+        {
+            return View();
+        }
+       
+        [HttpPost]
+        public ActionResult EgitimEkle(TblEgitimlerim p)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("EgitimEkle");
+            }
+            repo.TAdd(p);
+            return RedirectToAction("Index");
+        }
 
     }
 }
