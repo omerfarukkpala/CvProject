@@ -2382,6 +2382,7 @@
     <Content Include="Views\Iletisim\Index.cshtml" />
     <Content Include="Views\Hobi\Index.cshtml" />
     <Content Include="Views\SosyalMedya\Index.cshtml" />
+    <Content Include="Views\SosyalMedya\SayfaGetir.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
