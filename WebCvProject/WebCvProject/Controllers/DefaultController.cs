@@ -7,6 +7,8 @@ using WebCvProject.Models.Entity;
 
 namespace WebCvProject.Controllers
 {
+    [AllowAnonymous]
+
     public class DefaultController : Controller
     {
         // GET: Default
