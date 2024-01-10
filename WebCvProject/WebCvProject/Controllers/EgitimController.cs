@@ -8,7 +8,7 @@ using WebCvProject.Repositories;
 
 namespace WebCvProject.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class EgitimController : Controller
     {
         // GET: Egitim
