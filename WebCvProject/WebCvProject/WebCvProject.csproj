@@ -2381,11 +2381,11 @@
     <Content Include="Views\Sertifika\YeniSertifika.cshtml" />
     <Content Include="Views\Iletisim\Index.cshtml" />
     <Content Include="Views\Hobi\Index.cshtml" />
+    <Content Include="Views\SosyalMedya\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Admin\" />
-    <Folder Include="Views\SosyalMedya\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
