@@ -18,5 +18,17 @@ namespace WebCvProject.Controllers
             var veriler = repo.List();
             return View(veriler);
         }
+        [HttpGet]
+        public ActionResult Ekle()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Ekle(TblSosyalMedya p)
+        {
+            repo.TAdd(p);
+            return RedirectToAction("Index");
+        }
     }
 }
