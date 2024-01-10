@@ -2377,11 +2377,11 @@
     <Content Include="Views\Sertifika\Index.cshtml" />
     <Content Include="Views\Sertifika\SertifikaGetir.cshtml" />
     <Content Include="Views\Sertifika\YeniSertifika.cshtml" />
+    <Content Include="Views\Iletisim\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Admin\" />
-    <Folder Include="Views\Iletisim\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
