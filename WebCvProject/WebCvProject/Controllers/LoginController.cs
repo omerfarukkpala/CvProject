@@ -8,6 +8,8 @@ using WebCvProject.Models.Entity;
 
 namespace WebCvProject.Controllers
 {
+    [AllowAnonymous]
+
     public class LoginController : Controller
     {
         // GET: Login
@@ -31,6 +33,12 @@ namespace WebCvProject.Controllers
             {
                 return RedirectToAction("Index", "Login");
             }
+        }
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Index", "Login");
         }
     }
 }
