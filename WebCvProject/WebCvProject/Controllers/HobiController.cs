@@ -15,7 +15,8 @@ namespace WebCvProject.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            var hobiler = repo.List();
+            return View(hobiler);
         }
     }
 }
