@@ -18,6 +18,8 @@ namespace WebCvProject.Controllers
             var hobiler = repo.List();
             return View(hobiler);
         }
+
+        [HttpPost]
         public ActionResult Index(TblHobilerim p)
         {
             var t = repo.Find(x => x.ID == 1);
