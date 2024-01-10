@@ -48,5 +48,13 @@ namespace WebCvProject.Controllers
             repo.TUpdate(hesap);
             return RedirectToAction("Index");
         }
+
+        public ActionResult Sil(int id)
+        {
+            var hesap = repo.Find(x => x.ID == id);
+            hesap.Durum = false;
+            repo.TUpdate(hesap);
+            return RedirectToAction("Index");
+        }
     }
 }
