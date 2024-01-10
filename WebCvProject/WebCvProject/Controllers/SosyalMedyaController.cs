@@ -30,5 +30,23 @@ namespace WebCvProject.Controllers
             repo.TAdd(p);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public ActionResult SayfaGetir(int id)
+        {
+            var hesap = repo.Find(x => x.ID == id);
+            return View(hesap);
+        }
+
+        [HttpPost]
+        public ActionResult SayfaGetir(TblSosyalMedya p)
+        {
+            var hesap = repo.Find(x => x.ID == p.ID);
+            hesap.Ad = p.Ad;
+            hesap.Durum = true;
+            hesap.Link = p.Link;
+            hesap.Ikon = p.Ikon;
+            repo.TUpdate(hesap);
+            return RedirectToAction("Index");
+        }
     }
 }
