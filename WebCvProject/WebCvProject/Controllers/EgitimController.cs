@@ -11,7 +11,7 @@ namespace WebCvProject.Controllers
     [Authorize]
     public class EgitimController : Controller
     {
-        // GET: Egitim
+        // GET: Egitim Controller
         GenericRepository<TblEgitimlerim> repo = new GenericRepository<TblEgitimlerim>();
 
         public ActionResult Index()
