@@ -1,0 +1,49 @@
+﻿
+@using WebCvProject.Models.Entity
+
+@model List<TblHobilerim>
+<style>
+    .hobi-card {
+        background: var(--clr-white);
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        border-radius: var(--radius);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: var(--transition);
+    }
+
+        .hobi-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hobi-card .card-body {
+            transition: var(--transition);
+        }
+
+        .hobi-card:hover .card-body {
+            color: var(--clr-primary);
+        }
+</style>
+
+<div class="resume-section-content">
+    <h2 class="mb-5">
+        <i class="fas fa-paint-brush"></i> Hobilerim
+    </h2>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4 mb-4">
+                <div class="card hobi-card">
+                    <div class="card-body">
+                        <img src="@item.Aciklama1" alt="" style="margin-bottom:1px" height=150 class="popup-image" />
+                        @*<h5 class="card-title">@item.Aciklama1</h5>*@
+                        <a href="@item.Aciklama2" target="_blank" rel="noopener noreferrer">@item.Aciklama2</a>
+
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,98 @@
+﻿@using WebCvProject.Models.Entity
+
+@model List<TblSosyalMedya>
+@*<style>
+    .service {
+        background: var(--clr-white);
+        padding: 3rem 1.5rem;
+        margin-bottom: 2rem;
+        border-radius: var(--radius);
+        text-align: center;
+        transition: var(--transition);
+    }
+
+    .service-icon {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .service .underline {
+        width: 3rem;
+        height: 0.12rem;
+        transition: var(--transition);
+    }
+
+    .service p {
+        transition: var(--transition);
+    }
+
+    .service:hover {
+        background: var(--clr-primary-5);
+        color: var(--clr-white);
+    }
+
+        .service:hover p {
+            color: var(--clr-white);
+        }
+
+        .service:hover .underline {
+            background: var(--clr-white);
+        }
+</style>*@
+
+
+<div class="social-icons">
+    @foreach (var item in Model)
+    {
+        <a class="social-icon" href="@item.Link" target="_blank"><i class="@item.Ikon"></i></a>
+    }
+</div>
+
+<!--<section class="section bg-grey">-->
+    <!-- section title -->
+    <!--<div class="section-title">
+        <h2>Services</h2>
+        <div class="underline"></div>
+    </div>-->
+    <!--end of section title -->
+
+    <!--<div class="services-center section-center">-->
+        <!-- single service -->
+        <!--<article class="service">
+            <i class="fas fa-code service-icon"></i>
+            <h4>Web Development</h4>
+            <div class="underline"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                corrupti animi saepe quasi excepturi cupiditate voluptate dolor sed
+                obcaecati vero.
+            </p>
+        </article>-->
+        <!-- end of single service -->
+        <!-- single service -->
+        <!--<article class="service">
+            <i class="fab fa-sketch service-icon"></i>
+            <h4>Web Design</h4>
+            <div class="underline"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                corrupti animi saepe quasi excepturi cupiditate voluptate dolor sed
+                obcaecati vero.
+            </p>
+        </article>-->
+        <!-- end of single service -->
+        <!-- single service -->
+        <!--<article class="service">
+            <i class="fab fa-android service-icon"></i>
+            <h4>App Design</h4>
+            <div class="underline"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                corrupti animi saepe quasi excepturi cupiditate voluptate dolor sed
+                obcaecati vero.
+            </p>
+        </article>-->
+        <!-- end of single service -->
+    <!--</div>
+</section>-->
+

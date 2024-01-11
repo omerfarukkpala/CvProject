@@ -1,0 +1,76 @@
+﻿@using WebCvProject.Models.Entity
+
+@model List<TblEgitimlerim>
+<style>
+    .education-section {
+        margin-bottom: 50px;
+    }
+
+    .education-title {
+        color: #ffc107;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .timeline-center {
+        width: 80vw;
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+
+    .timeline-item {
+        border-top: 2px dashed #ffc107;
+        margin: 0;
+        padding: 4rem 2rem;
+        position: relative;
+    }
+
+    .timeline p {
+        margin-bottom: 0;
+    }
+
+    .timeline-item:nth-child(even) {
+        border-left: 2px dashed #ffc107;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        margin-right: 2rem;
+        padding-right: 0;
+    }
+
+    .timeline-item:nth-child(odd) {
+        border-right: 2px dashed #ffc107;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        margin-left: 2rem;
+        padding-left: 0;
+    }
+
+    .timeline-item:first-child {
+        border-top: 0;
+        border-top-right-radius: 0;
+    }
+
+    .timeline-item:last-child {
+        border-bottom-left-radius: 0;
+    }
+</style>
+
+<div class="resume-section-content education-section">
+    <h2 class="education-title">Eğitim Hayatım</h2>
+    <div class="timeline-center">
+        @foreach (var item in Model)
+        {
+            <article class="timeline-item education-entry">
+                <div class="education-details">
+                    <h3>@item.Baslik</h3>
+                    <div class="subheading mb-3">@item.AltBaslik1</div>
+                    <div>@item.AltBaslik2</div>
+                    <p>GNO: @item.GNO</p>
+                </div>
+                <div class="education-date">
+                    <span class="text-primary">@item.Tarih</span>
+                </div>
+            </article>
+        }
+    </div>
+</div>

@@ -1,0 +1,92 @@
+﻿@using WebCvProject.Models.Entity
+
+@model List<TblIletisim>
+<!-- CSS Stilleri -->
+<style>
+    .btn-info:hover {
+        background-color: #28a745; /* Gönderme butonu hover rengi */
+    }
+
+    .form-control:focus {
+        border-color: #007bff; /* Input alanlarına odaklandığında border rengi */
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    .input-group-text {
+        background-color: #ffc107; /* FontAwesome ikonlarına arka plan rengi */
+        color: white; /* FontAwesome ikon rengi */
+        font-size: 1.2rem; /* FontAwesome ikon boyutu */
+    }
+
+    h2,
+    label {
+        font-size: 1.5rem; /* Başlık ve etiket boyutu */
+    }
+
+    .form-group {
+        margin-bottom: 20px; /* Form grupları arasındaki boşluk */
+    }
+
+    .btn-info {
+        font-size: 1.2rem; /* Gönderme butonu boyutu */
+    }
+</style>
+
+
+<!-- İletişim Formu -->
+<div class="resume-section-content">
+    <form method="post">
+        <h2 class="mb-5">İletişim</h2>
+
+        <div class="form-group">
+            <label for="AdSoyad">Ad Soyad </label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+                <input type="text" name="AdSoyad" id="AdSoyad" class="form-control" placeholder="Adınız" required />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Mail">Mail *</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                </div>
+                <input type="text" name="Mail" id="Mail" class="form-control" placeholder="E-Posta" required />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Konu">Konu *</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-heading"></i>
+                    </span>
+                </div>
+                <input type="text" name="Konu" id="Konu" class="form-control" placeholder="Konu" required />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Mesaj">Mesaj *</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-comment"></i>
+                    </span>
+                </div>
+                <textarea name="Mesaj" id="Mesaj" cols="5" rows="5" class="form-control" placeholder="Mesaj" required></textarea>
+            </div>
+        </div>
+
+        <br />
+        <button class="btn btn-warning">Mesaj Gönder</button>
+    </form>
+</div>
