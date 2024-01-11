@@ -10,7 +10,7 @@ namespace WebCvProject.Controllers
 {
     public class AdminController : Controller
     {
-        // GET: Admin
+        // GET: Admin Controller
         GenericRepository<TblAdmin> repo = new GenericRepository<TblAdmin>();
 
         public ActionResult Index()
