@@ -2457,6 +2457,7 @@
     <Content Include="startbootstrap-resume-gh-pages\assets\img\favicon.ico" />
     <Content Include="startbootstrap-resume-gh-pages\assets\img\profile.jpg" />
     <Content Include="startbootstrap-resume-gh-pages\css\styles.css" />
+    <Content Include="startbootstrap-resume-gh-pages\css\stylesss.css" />
     <Content Include="startbootstrap-resume-gh-pages\css\stylessss.css" />
     <Content Include="startbootstrap-resume-gh-pages\index.html" />
     <Content Include="startbootstrap-resume-gh-pages\js\scripts.js" />
