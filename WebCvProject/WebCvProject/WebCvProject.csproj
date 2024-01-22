@@ -2456,6 +2456,7 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="startbootstrap-resume-gh-pages\assets\img\favicon.ico" />
     <Content Include="startbootstrap-resume-gh-pages\assets\img\profile.jpg" />
+    <Content Include="startbootstrap-resume-gh-pages\assets\img\profilee.jpg" />
     <Content Include="startbootstrap-resume-gh-pages\css\styles.css" />
     <Content Include="startbootstrap-resume-gh-pages\css\stylesss.css" />
     <Content Include="startbootstrap-resume-gh-pages\css\stylessss.css" />
