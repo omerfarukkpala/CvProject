@@ -26,3 +26,5 @@ Oluşturduğumuz tabloları projemize Entity Data Model aracılığıyla  dahil 
 - Veritabanı Yönetimi, Verileri görüntüleme ve düzenleme
 - Genel sistem ayarlarını ve yapılandırmalarını yönetme
 - Email gönderme, güvenlik önlemleri gibi ayarları düzenleme
+
+# Siteye Genel bir Bakış 
