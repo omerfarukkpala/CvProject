@@ -4,6 +4,10 @@ Bu proje, kullanıcıların kişisel özgeçmişlerini oluşturabileceği ve yö
 Proje içerisinde  ASP.NET Framework, SQL Server, MVC, CSS, ve HTML kullanılarak geliştirilmiş bir Admin Panelli Dinamik Cv uygulamasını içermektedir.Template kullanarak Model-View-Controller yapılarını ile Sql Server Veri Tabanına veriler kaydedilerek dinamik olarak proje oluşturulmuştur.
 Oluşturduğumuz tabloları projemize Entity Data Model aracılığıyla  dahil ettik. Repository Design Pattern ile CRUD işlemlerini gerçekleştirdik. Admin panelimiz sayesinde site üzerindeki değişikliklerimizi arka planda yapabiliyoruz.
 ### Projeye Genel Bakış
+
+https://github.com/omerfarukkpala/CvProject/assets/101570820/1362b7c2-4652-42bc-bc23-7454c2106e59
+
+
 - Kullanıcılar, dinamik bir CV oluşturabilir ve güncelleyebilir.
 - CV içeriği, kullanıcı dostu bir arayüzle düzenlenebilir.
 - Giriş ve yetkilendirme işlemleri, güvenli bir kullanıcı deneyimi sunar.
