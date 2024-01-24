@@ -17,9 +17,9 @@ Oluşturduğumuz tabloları projemize Entity Data Model aracılığıyla  dahil 
 + Css
 ### Admin Paneli🛠️
 **`Admin Paneli Neler Yapabilir?`**
--Login Paneli ile sisteme erişim sağlama
--Kullanıcılardan gelen mesajlara erişebilme
--Hakkımda,Eğitimlerim,Deneyimlerim,Hobilerim,Yeteneklerim,Sertifikalarım,İletişim alanları için Crud(listele,ekle,sil,güncelle) işlemleri
+- Login Paneli ile sisteme erişim sağlama
+- Kullanıcılardan gelen mesajlara erişebilme
+- Hakkımda,Eğitimlerim,Deneyimlerim,Hobilerim,Yeteneklerim,Sertifikalarım,İletişim alanları için Crud(listele,ekle,sil,güncelle) işlemleri
 - Kullanıcı Yönetimi
 - Sayfaları ve içeriği düzenleme yetkisi
 - Sosyal Medya Hesaplarını Yönetebilme
