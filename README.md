@@ -41,4 +41,6 @@ Oluşturduğumuz tabloları projemize Entity Data Model aracılığıyla  dahil 
 ## Admin Experience ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/2a171525-e774-4c22-b593-ae019a9fce86)
 ## Admin Project ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/a2e5fee5-6ffd-41ce-94a4-254c1109c7ed)
 ## Admin Skills ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/a414ec04-12ec-49fb-a89c-59ce50236e6f)
-
+## Admin Certification ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/a97d5407-6e66-4eb0-8b4a-468f241aca6b)
+## Admin Contact ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/19dd3c73-9813-4379-83cc-6107870e696a)
+## Admin Socia Media ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/fef813bb-71f6-441d-b1ea-fb5bba8de371)
