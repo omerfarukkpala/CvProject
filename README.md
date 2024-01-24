@@ -32,3 +32,5 @@ Oluşturduğumuz tabloları projemize Entity Data Model aracılığıyla  dahil 
 ## Experience ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/47b3e14f-c427-4350-942c-b093c9efbf0a)
 ## Education ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/28621149-4a83-4b3f-a709-01b8ac068671)
 ## Skills ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/045d45a3-8cf6-491d-b484-9bee35607d7b)
+## Project ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/b10e6f65-ed4a-4f3c-b4ad-94064a3670f0)
+## Certification ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/7725955f-9cfc-46eb-9061-dff5e0932e9b)
