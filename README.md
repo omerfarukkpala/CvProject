@@ -1,4 +1,2 @@
 # Cv Project   
-#  
-#
-  
+
