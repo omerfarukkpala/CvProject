@@ -31,7 +31,7 @@ https://github.com/omerfarukkpala/CvProject/assets/101570820/1362b7c2-4652-42bc-
 - Genel sistem ayarlarını ve yapılandırmalarını yönetme
 - Email gönderme, güvenlik önlemleri gibi ayarları düzenleme
 
-# Siteye Genel bir Bakış 
+# Siteye Genel Bir Bakış 
 ## About Me ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/ef2eefd7-f4be-4ada-82ca-6f2e63bae5f3)
 ## Experience ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/47b3e14f-c427-4350-942c-b093c9efbf0a)
 ## Education ![image](https://github.com/omerfarukkpala/CvProject/assets/101570820/28621149-4a83-4b3f-a709-01b8ac068671)
