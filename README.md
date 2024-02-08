@@ -9,7 +9,7 @@ https://github.com/omerfarukkpala/CvProject/assets/101570820/1362b7c2-4652-42bc-
 
 
 - Kullanıcılar, dinamik bir CV oluşturabilir ve güncelleyebilir.
-- CV içeriği, kullanıcı dostu bir arayüzle düzenlenebilir.
+- CV içeriği, kullanıcı dostu bir arayüzle düzenlenebilir. 
 - Giriş ve yetkilendirme işlemleri, güvenli bir kullanıcı deneyimi sunar.
 - Veritabanı kullanılarak kişisel bilgiler güvenli bir şekilde depolanır.
 #### **`Kullanılan Teknolojiler`**
