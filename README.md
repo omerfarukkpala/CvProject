@@ -1,5 +1,5 @@
 # Cv Project                                                                   
-## **MVC ile Dinamik Cv Sitesi**                                            
+## **MVC ile Dinamik Cv Sitesi**                                             
 Bu proje, kullanıcıların kişisel özgeçmişlerini oluşturabileceği ve yönetebileceği dinamik bir CV projesidir. 
 Proje içerisinde  ASP.NET Framework, SQL Server, MVC, HTML, CSS ve Bootstrap kullanılarak geliştirilmiş bir Admin Panelli Dinamik Cv uygulamasını içermektedir.Template kullanarak Model-View-Controller yapılarını ile Sql Server Veri Tabanına veriler kaydedilerek dinamik olarak proje oluşturulmuştur.
 Oluşturduğumuz tabloları projemize Entity Data Model aracılığıyla  dahil ettik. Repository Design Pattern ile CRUD işlemlerini gerçekleştirdik. Admin panelimiz sayesinde site üzerindeki değişikliklerimizi arka planda yapabiliyoruz. 
