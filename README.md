@@ -6,7 +6,7 @@ Oluşturduğumuz tabloları projemize Entity Data Model aracılığıyla  dahil 
             
 https://github.com/omerfarukkpala/CvProject/assets/101570820/1362b7c2-4652-42bc-bc23-7454c2106e59
    
-   
+    
 - Kullanıcılar, dinamik bir CV oluşturabilir ve güncelleyebilir. 
 - CV içeriği, kullanıcı dostu bir arayüzle düzenlenebilir. 
 - Giriş ve yetkilendirme işlemleri, güvenli bir kullanıcı deneyimi sunar.
