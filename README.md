@@ -12,7 +12,7 @@ https://github.com/omerfarukkpala/CvProject/assets/101570820/1362b7c2-4652-42bc-
 - Giriş ve yetkilendirme işlemleri, güvenli bir kullanıcı deneyimi sunar.
 - Veritabanı kullanılarak kişisel bilgiler güvenli bir şekilde depolanır.
 #### **`Kullanılan Teknolojiler`**  
-+ ASP.NET Framework 
++ ASP.NET Framework  
 + MVC
 + MS Sql Server 
 + Repository Design Pattern 
