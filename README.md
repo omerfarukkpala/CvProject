@@ -15,7 +15,7 @@ https://github.com/omerfarukkpala/CvProject/assets/101570820/1362b7c2-4652-42bc-
 + ASP.NET Framework  
 + MVC
 + MS Sql Server 
-+ Repository Design Pattern 
++ Repository Design Pattern  
 + Html
 + Css
 ### Admin Paneli🛠️
