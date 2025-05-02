@@ -13,7 +13,7 @@ https://github.com/omerfarukkpala/CvProject/assets/101570820/1362b7c2-4652-42bc-
 - Veritabanı kullanılarak kişisel bilgiler güvenli bir şekilde depolanır.
 #### **`Kullanılan Teknolojiler`**   
 + ASP.NET Framework  
-+ MVC 
++ MVC  
 + MS Sql Server 
 + Repository Design Pattern  
 + Html
