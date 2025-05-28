@@ -14,7 +14,7 @@ https://github.com/omerfarukkpala/CvProject/assets/101570820/1362b7c2-4652-42bc-
 #### **`Kullanılan Teknolojiler`**   
 + ASP.NET Framework  
 + MVC  
-+ MS Sql Server 
++ MS Sql Server  
 + Repository Design Pattern  
 + Html
 + Css
